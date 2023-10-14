@@ -6,6 +6,11 @@ lua54 'yes'
 author 'Jaysaan'
 description 'Radial Rockstar Editor sous OX.'
 
-shared_script '@ox_lib/init.lua'
+shared_scripts {
+    '@es_extended/imports.lua',
+    '@ox_lib/init.lua',
+}
 
 client_script 'client/*.lua'
+
+file 'locales/*.json'

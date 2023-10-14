@@ -1,8 +1,10 @@
+lib.locale()
+
 lib.registerRadial({
     id = 'jay_rockstar',
     items = {
       {
-        label = 'Éditer',
+        label = locale('edit'),
         icon = 'folder-open',
         onSelect = function ()
           NetworkSessionLeaveSinglePlayer()
@@ -10,21 +12,21 @@ lib.registerRadial({
         end
       },
       {
-        label = 'Filmer',
+        label = locale('film'),
         icon = 'video',
         onSelect = function ()
           StartRecording(1)
         end
       },
       {
-        label = 'Enregister le clip',
+        label = locale('save'),
         icon = 'film',
         onSelect = function ()
           StopRecordingAndSaveClip()
         end
       },
       {
-        label = 'Supprimer le clip',
+        label = locale('delete'),
         icon = 'xmark',
         onSelect = function ()
           StopRecordingAndDiscardClip()
