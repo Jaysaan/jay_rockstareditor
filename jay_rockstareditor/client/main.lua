@@ -13,7 +13,7 @@ lib.registerRadial({
       },
       {
         label = locale('film'),
-        icon = 'video',
+        icon = 'play',
         onSelect = function ()
           StartRecording(1)
         end
@@ -27,7 +27,7 @@ lib.registerRadial({
       },
       {
         label = locale('delete'),
-        icon = 'xmark',
+        icon = 'stop',
         onSelect = function ()
           StopRecordingAndDiscardClip()
         end
